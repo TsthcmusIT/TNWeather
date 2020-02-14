@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentDayView" customModule="WeatherProject" customModuleProvider="target">
+            <connections>
+                <outlet property="mainImageView" destination="wYV-yj-8M9" id="r0a-II-Xw6"/>
+                <outlet property="mainLabel" destination="eiF-j0-ldN" id="RRL-lC-fpu"/>
+                <outlet property="mainTempLabel" destination="rHK-0K-ecq" id="93y-am-bOP"/>
+                <outlet property="maxTempImageView" destination="CQt-gS-iJq" id="paw-ZM-FNP"/>
+                <outlet property="maxTempLabel" destination="i0w-U5-jJ5" id="j8p-2d-EPj"/>
+                <outlet property="minTempImageView" destination="t1p-NV-ee9" id="GlB-Bk-2Jt"/>
+                <outlet property="minTempLabel" destination="6hf-b2-uNM" id="5zH-Ux-tdZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wYV-yj-8M9">
+                    <rect key="frame" x="5" y="15" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="13l-9M-mpB"/>
+                        <constraint firstAttribute="width" secondItem="wYV-yj-8M9" secondAttribute="height" multiplier="1:1" id="3Fn-cY-wco"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiF-j0-ldN">
+                    <rect key="frame" x="67" y="15" width="343" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQt-gS-iJq">
+                    <rect key="frame" x="15" y="77" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="kvm-id-qlx"/>
+                        <constraint firstAttribute="height" constant="25" id="yQm-dI-vy9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0w-U5-jJ5">
+                    <rect key="frame" x="43" y="77" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="EsL-Ze-mVJ"/>
+                        <constraint firstAttribute="width" constant="30" id="xgV-k4-y4d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-NV-ee9">
+                    <rect key="frame" x="88" y="77" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="cEz-Zh-RRx"/>
+                        <constraint firstAttribute="width" constant="25" id="uXP-Yo-tZN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-b2-uNM">
+                    <rect key="frame" x="116" y="77" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Fwb-cN-czO"/>
+                        <constraint firstAttribute="height" constant="25" id="Gzw-Ep-lRO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHK-0K-ecq">
+                    <rect key="frame" x="5" y="102" width="160" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="5e9-dK-qcT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wYV-yj-8M9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="4Yh-sX-IPx"/>
+                <constraint firstAttribute="trailing" secondItem="eiF-j0-ldN" secondAttribute="trailing" constant="4" id="AkV-Ps-gzv"/>
+                <constraint firstItem="i0w-U5-jJ5" firstAttribute="top" secondItem="CQt-gS-iJq" secondAttribute="top" id="DOy-Re-wa4"/>
+                <constraint firstItem="6hf-b2-uNM" firstAttribute="leading" secondItem="t1p-NV-ee9" secondAttribute="trailing" constant="3" id="Keq-0b-RCt"/>
+                <constraint firstItem="eiF-j0-ldN" firstAttribute="height" secondItem="wYV-yj-8M9" secondAttribute="height" id="MMM-gJ-F0T"/>
+                <constraint firstItem="rHK-0K-ecq" firstAttribute="top" secondItem="CQt-gS-iJq" secondAttribute="bottom" id="V0i-h9-Pfl"/>
+                <constraint firstItem="eiF-j0-ldN" firstAttribute="top" secondItem="wYV-yj-8M9" secondAttribute="top" id="Wux-Zd-xLn"/>
+                <constraint firstAttribute="bottom" secondItem="rHK-0K-ecq" secondAttribute="bottom" constant="5" id="WxS-XE-JYC"/>
+                <constraint firstItem="CQt-gS-iJq" firstAttribute="top" secondItem="wYV-yj-8M9" secondAttribute="bottom" constant="7" id="gPi-KC-NwB"/>
+                <constraint firstItem="wYV-yj-8M9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ixy-dU-gFl"/>
+                <constraint firstItem="i0w-U5-jJ5" firstAttribute="leading" secondItem="CQt-gS-iJq" secondAttribute="trailing" constant="3" id="jVR-2Q-6PW"/>
+                <constraint firstItem="6hf-b2-uNM" firstAttribute="top" secondItem="t1p-NV-ee9" secondAttribute="top" id="kOf-TS-bfq"/>
+                <constraint firstItem="eiF-j0-ldN" firstAttribute="leading" secondItem="wYV-yj-8M9" secondAttribute="trailing" constant="7" id="oMh-qn-Jo1"/>
+                <constraint firstItem="rHK-0K-ecq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="rVa-6P-WRu"/>
+                <constraint firstItem="CQt-gS-iJq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="rfK-r0-qnE"/>
+                <constraint firstItem="t1p-NV-ee9" firstAttribute="top" secondItem="i0w-U5-jJ5" secondAttribute="top" id="tQq-0W-jOv"/>
+                <constraint firstItem="t1p-NV-ee9" firstAttribute="leading" secondItem="i0w-U5-jJ5" secondAttribute="trailing" constant="15" id="yZ1-D4-8Tk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow.png" width="100" height="100"/>
+        <image name="up_arrow.png" width="100" height="100"/>
+    </resources>
+</document>

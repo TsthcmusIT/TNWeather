@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherDetailView" customModule="WeatherProject" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="7Ce-bR-4We" id="cT5-Dr-DyD"/>
+                <outlet property="cityNameLabel" destination="gFg-Yd-Awh" id="80e-ng-fTi"/>
+                <outlet property="contentView" destination="myg-aJ-rPS" id="ZLI-iz-3Da"/>
+                <outlet property="contentViewLayoutConstraintHeight" destination="6mV-CD-2Ca" id="8Ka-Ua-IJN"/>
+                <outlet property="contentViewLayoutConstraintWidth" destination="aou-3x-ipi" id="Tlk-k4-GLf"/>
+                <outlet property="currentDayView" destination="U6V-EB-3uP" id="V46-gP-ysQ"/>
+                <outlet property="dayItemStackView" destination="qC7-IN-YrH" id="aFG-Kf-iI4"/>
+                <outlet property="fifthDayItemView" destination="BSa-a9-KYK" id="Rho-rq-xRC"/>
+                <outlet property="firstDayItemView" destination="Mc6-09-9aM" id="O7U-YX-CbI"/>
+                <outlet property="fourthDayItemView" destination="WoI-Iu-9fR" id="9iH-VY-cKa"/>
+                <outlet property="locationButton" destination="fta-Rh-o6c" id="pfh-hs-mMl"/>
+                <outlet property="scrollView" destination="cmv-8e-Eyi" id="eww-lR-xaV"/>
+                <outlet property="secondDayItemView" destination="IVK-Qp-OmF" id="RCh-a6-fCX"/>
+                <outlet property="thirdDayItemView" destination="yTG-01-1pq" id="EOR-hY-soI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hochiminh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-bR-4We">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFg-Yd-Awh">
+                    <rect key="frame" x="10" y="60" width="394" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KMf-rm-eLj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmv-8e-Eyi">
+                    <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myg-aJ-rPS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6V-EB-3uP" customClass="CurrentDayView" customModule="WeatherProject" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="70" width="394" height="300"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="JpK-UY-1ME"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hm-oO-gIe">
+                                    <rect key="frame" x="8" y="370" width="398" height="340"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-IN-YrH">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="340"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-09-9aM" customClass="DayItemView" customModule="WeatherProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="52"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVK-Qp-OmF" customClass="DayItemView" customModule="WeatherProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="72" width="398" height="52"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTG-01-1pq" customClass="DayItemView" customModule="WeatherProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="144" width="398" height="52"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-Iu-9fR" customClass="DayItemView" customModule="WeatherProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="216" width="398" height="52"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSa-a9-KYK" customClass="DayItemView" customModule="WeatherProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="288" width="398" height="52"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.74350792249999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="BSa-a9-KYK" firstAttribute="height" secondItem="Mc6-09-9aM" secondAttribute="height" id="I5N-Ne-Ncf"/>
+                                                <constraint firstItem="WoI-Iu-9fR" firstAttribute="height" secondItem="Mc6-09-9aM" secondAttribute="height" id="rCe-cs-GD4"/>
+                                                <constraint firstItem="IVK-Qp-OmF" firstAttribute="height" secondItem="Mc6-09-9aM" secondAttribute="height" id="rZv-1i-zdS"/>
+                                                <constraint firstItem="yTG-01-1pq" firstAttribute="height" secondItem="Mc6-09-9aM" secondAttribute="height" id="sZN-fB-O6g"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.66521786971830987" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qC7-IN-YrH" secondAttribute="trailing" id="8lN-Dl-JGb"/>
+                                        <constraint firstAttribute="bottom" secondItem="qC7-IN-YrH" secondAttribute="bottom" id="R6n-ND-jaf"/>
+                                        <constraint firstItem="qC7-IN-YrH" firstAttribute="top" secondItem="6Hm-oO-gIe" secondAttribute="top" id="aXz-Tq-IWo"/>
+                                        <constraint firstAttribute="height" constant="340" id="euD-4I-ZLR"/>
+                                        <constraint firstItem="qC7-IN-YrH" firstAttribute="leading" secondItem="6Hm-oO-gIe" secondAttribute="leading" id="zQh-cJ-TGo"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="U6V-EB-3uP" firstAttribute="top" secondItem="myg-aJ-rPS" secondAttribute="top" constant="70" id="3H1-R8-ljM"/>
+                                <constraint firstAttribute="height" constant="786" id="6mV-CD-2Ca"/>
+                                <constraint firstItem="U6V-EB-3uP" firstAttribute="leading" secondItem="myg-aJ-rPS" secondAttribute="leading" constant="10" id="I77-Kt-Rrz"/>
+                                <constraint firstAttribute="trailing" secondItem="U6V-EB-3uP" secondAttribute="trailing" constant="10" id="IH5-Yr-HGD"/>
+                                <constraint firstItem="6Hm-oO-gIe" firstAttribute="leading" secondItem="myg-aJ-rPS" secondAttribute="leading" constant="8" id="NUd-Yt-iAA"/>
+                                <constraint firstItem="6Hm-oO-gIe" firstAttribute="top" secondItem="U6V-EB-3uP" secondAttribute="bottom" id="YJp-HN-nR6"/>
+                                <constraint firstAttribute="width" constant="414" id="aou-3x-ipi"/>
+                                <constraint firstAttribute="trailing" secondItem="6Hm-oO-gIe" secondAttribute="trailing" constant="8" id="iaO-Ql-dwB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="myg-aJ-rPS" secondAttribute="trailing" id="ANd-l4-TWr"/>
+                        <constraint firstAttribute="bottom" secondItem="myg-aJ-rPS" secondAttribute="bottom" id="TWd-Y6-cW7"/>
+                        <constraint firstItem="myg-aJ-rPS" firstAttribute="top" secondItem="cmv-8e-Eyi" secondAttribute="top" id="VCS-z4-zQG"/>
+                        <constraint firstItem="myg-aJ-rPS" firstAttribute="leading" secondItem="cmv-8e-Eyi" secondAttribute="leading" id="jJw-Fy-LBf"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="oT0-kK-YQW"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="hJD-kK-7L8"/>
+                </scrollView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navi_plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="coT-dW-HCb">
+                    <rect key="frame" x="351" y="61" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="NW6-dZ-qqa"/>
+                        <constraint firstAttribute="height" constant="48" id="e34-iR-enQ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fta-Rh-o6c">
+                    <rect key="frame" x="350" y="60" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6Bk-0e-2FK"/>
+                        <constraint firstAttribute="width" constant="50" id="yqa-wO-tFa"/>
+                    </constraints>
+                    <connections>
+                        <action selector="locationButtonAction:" destination="-1" eventType="touchUpInside" id="QrL-H2-oDl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cmv-8e-Eyi" firstAttribute="leading" secondItem="XNQ-uR-fXk" secondAttribute="leading" id="0Oo-YY-jDu"/>
+                <constraint firstItem="XNQ-uR-fXk" firstAttribute="trailing" secondItem="coT-dW-HCb" secondAttribute="trailing" constant="15" id="33d-tM-2UW"/>
+                <constraint firstItem="7Ce-bR-4We" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4ps-0r-znD"/>
+                <constraint firstAttribute="bottom" secondItem="7Ce-bR-4We" secondAttribute="bottom" id="6L0-J0-Fag"/>
+                <constraint firstItem="7Ce-bR-4We" firstAttribute="trailing" secondItem="XNQ-uR-fXk" secondAttribute="trailing" id="AoW-8G-tqt"/>
+                <constraint firstItem="gFg-Yd-Awh" firstAttribute="leading" secondItem="XNQ-uR-fXk" secondAttribute="leading" constant="10" id="FFQ-b1-a62"/>
+                <constraint firstItem="7Ce-bR-4We" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HSo-5R-S2V"/>
+                <constraint firstItem="7Ce-bR-4We" firstAttribute="leading" secondItem="XNQ-uR-fXk" secondAttribute="leading" id="LJ4-PQ-QGK"/>
+                <constraint firstItem="cmv-8e-Eyi" firstAttribute="trailing" secondItem="XNQ-uR-fXk" secondAttribute="trailing" id="Nvj-Hx-elO"/>
+                <constraint firstAttribute="bottom" secondItem="cmv-8e-Eyi" secondAttribute="bottom" id="WUe-1O-A4I"/>
+                <constraint firstItem="cmv-8e-Eyi" firstAttribute="top" secondItem="gFg-Yd-Awh" secondAttribute="bottom" id="bk4-1Y-nTH"/>
+                <constraint firstItem="gFg-Yd-Awh" firstAttribute="top" secondItem="XNQ-uR-fXk" secondAttribute="top" constant="16" id="fkC-Vn-u58"/>
+                <constraint firstItem="XNQ-uR-fXk" firstAttribute="trailing" secondItem="gFg-Yd-Awh" secondAttribute="trailing" constant="10" id="hMT-Jz-CUD"/>
+                <constraint firstItem="fta-Rh-o6c" firstAttribute="top" secondItem="XNQ-uR-fXk" secondAttribute="top" constant="16" id="iFo-wi-Dkf"/>
+                <constraint firstItem="coT-dW-HCb" firstAttribute="top" secondItem="XNQ-uR-fXk" secondAttribute="top" constant="17" id="sm8-lb-Qd6"/>
+                <constraint firstItem="XNQ-uR-fXk" firstAttribute="trailing" secondItem="fta-Rh-o6c" secondAttribute="trailing" constant="14" id="tBu-ZP-2Jc"/>
+                <constraint firstItem="7Ce-bR-4We" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="z9k-RI-ozQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XNQ-uR-fXk"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hochiminh.jpg" width="480" height="853"/>
+        <image name="navi_plus.png" width="100" height="100"/>
+    </resources>
+</document>
